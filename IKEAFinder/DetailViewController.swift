@@ -36,4 +36,21 @@ class DetailViewController: UIViewController {
     }
     
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // CHECK THE SEGUE NAME
+        
+        if segue.identifier == "mapSegue" {
+            
+            // FIGURE OUT THE DESTINATION OF THE SEGUE
+                
+            let mapVC = segue.destinationViewController as! MapViewController
+            
+            mapVC.mappedIKEA = thisIKEA
+            
+        }
+        
+    }
+    
+    
 }

@@ -116,6 +116,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRB-rz-LDW">
                                                 <rect key="frame" x="0.0" y="42" width="89" height="30"/>
                                                 <state key="normal" title="View on Map"/>
+                                                <connections>
+                                                    <segue destination="fXw-NK-pX3" kind="show" identifier="mapSegue" id="ze0-1V-Oke"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -145,6 +148,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oe-qK-RCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2089" y="438"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="U02-p3-8eg">
+            <objects>
+                <viewController id="fXw-NK-pX3" customClass="MapViewController" customModule="IKEAFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4bg-QY-J2t"/>
+                        <viewControllerLayoutGuide type="bottom" id="zcc-CN-M5n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vak-XD-hHR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-3V-u4Y">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K0d-3V-u4Y" firstAttribute="leading" secondItem="Vak-XD-hHR" secondAttribute="leading" id="7Tt-i1-EWv"/>
+                            <constraint firstAttribute="trailing" secondItem="K0d-3V-u4Y" secondAttribute="trailing" id="8k2-dC-lfz"/>
+                            <constraint firstItem="K0d-3V-u4Y" firstAttribute="top" secondItem="4bg-QY-J2t" secondAttribute="bottom" id="d3v-VY-yla"/>
+                            <constraint firstItem="zcc-CN-M5n" firstAttribute="top" secondItem="K0d-3V-u4Y" secondAttribute="bottom" id="hcw-UZ-zuB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glw-bG-zVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2904" y="438"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2y1-7Y-WJN">
