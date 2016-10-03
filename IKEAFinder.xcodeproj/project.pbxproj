@@ -15,6 +15,7 @@
 		4FAF583F1D99C40600CBFB1B /* IKEADataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF583E1D99C40600CBFB1B /* IKEADataStore.swift */; };
 		4FAF58411D99C65C00CBFB1B /* IKEATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF58401D99C65C00CBFB1B /* IKEATableViewController.swift */; };
 		73798AB11D9AF2C500643FC2 /* IKEAStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798AB01D9AF2C500643FC2 /* IKEAStoreTableViewCell.swift */; };
+		73E13AAB1DA2D89200E08111 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E13AAA1DA2D89200E08111 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4FAF583E1D99C40600CBFB1B /* IKEADataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKEADataStore.swift; sourceTree = "<group>"; };
 		4FAF58401D99C65C00CBFB1B /* IKEATableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKEATableViewController.swift; sourceTree = "<group>"; };
 		73798AB01D9AF2C500643FC2 /* IKEAStoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKEAStoreTableViewCell.swift; sourceTree = "<group>"; };
+		73E13AAA1DA2D89200E08111 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				4FAF58281D99C0BF00CBFB1B /* AppDelegate.swift */,
 				4FAF582C1D99C0BF00CBFB1B /* Main.storyboard */,
+				73E13AAA1DA2D89200E08111 /* DetailViewController.swift */,
 				4FAF583C1D99C35700CBFB1B /* IKEA.swift */,
 				4FAF583E1D99C40600CBFB1B /* IKEADataStore.swift */,
 				4FAF582F1D99C0BF00CBFB1B /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				4FAF58291D99C0BF00CBFB1B /* AppDelegate.swift in Sources */,
 				4FAF58411D99C65C00CBFB1B /* IKEATableViewController.swift in Sources */,
 				73798AB11D9AF2C500643FC2 /* IKEAStoreTableViewCell.swift in Sources */,
+				73E13AAB1DA2D89200E08111 /* DetailViewController.swift in Sources */,
 				4FAF583D1D99C35700CBFB1B /* IKEA.swift in Sources */,
 				4FAF583F1D99C40600CBFB1B /* IKEADataStore.swift in Sources */,
 			);

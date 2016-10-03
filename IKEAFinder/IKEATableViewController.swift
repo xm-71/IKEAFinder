@@ -43,6 +43,33 @@ class IKEATableViewController: UITableViewController {
         return cell
         
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // CHECK THE SEGUE NAME
+        
+        if segue.identifier == "ikeaDetail" {
+            
+            // FIGURE OUT WHICH ROW WAS JUST TAPPED
+            
+            if let row = tableView.indexPathForSelectedRow?.row {
+                print("\(row)")
+                
+                let tappedIKEA = ikeaDataStore.sharedInstance.allIKEAs[row]
+                
+                let detailVC = segue.destinationViewController as! DetailViewController
+                
+                
+                
+                detailVC.thisIKEA = tappedIKEA
+            }
+            
+            print("executing segue")
+        }
+        
+        
+    }
 }
 
 
