@@ -39,6 +39,16 @@ class IKEA: NSObject, MKAnnotation {
         
         super.init()
     }
-}
+    
+    
+    func calculateDistance(userLocation: CLLocation)-> Double{
+    
+        let storelocation = CLLocation(latitude: self.latitude, longitude: self.longitude)
+    
+    
+    }
+    
+    
+}//end ikea class
 
 
