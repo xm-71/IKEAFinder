@@ -43,9 +43,12 @@ class IKEA: NSObject, MKAnnotation {
     
     func calculateDistance(userLocation: CLLocation)-> Double{
     
-        let storelocation = CLLocation(latitude: self.latitude, longitude: self.longitude)
+        let storeLocation = CLLocation(latitude: self.latitude, longitude: self.longitude)
     
-    
+        self.distanceFromCurrentLocation = storeLocation.distanceFromLocation(userLocation) * 0.000621371
+        
+        return self.distanceFromCurrentLocation!
+        
     }
     
     
