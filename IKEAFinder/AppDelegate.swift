@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate{
 
     var window: UIWindow?
+    
+    
+    //declare some vars
+    
+    var locationManager: CLLocationManager!
+    
+    var currentLocation: CLLocation? = nil
+    
+    var ikeaTVC: IKEATableViewController! = nil
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

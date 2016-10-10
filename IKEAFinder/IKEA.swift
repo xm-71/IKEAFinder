@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MapKit
 
-class IKEA: NSObject {
+class IKEA: NSObject, MKAnnotation {
     var name: String
     var city: String
     var state: String
@@ -17,6 +18,14 @@ class IKEA: NSObject {
     var latitude: Double
     var longitude: Double
     var distanceFromCurrentLocation: Double?
+    
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2DMake(latitude, longitude)
+    }
+    
+    var title: String? {
+        return name
+    }
     
     
     init (name: String, city: String, state: String, smalland: Bool, storeImage: String, latitude: Double, longitude: Double) {

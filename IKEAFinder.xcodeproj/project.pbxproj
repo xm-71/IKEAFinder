@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F26FCE31DA59D7200D3C6E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F26FCE21DA59D7200D3C6E5 /* CoreLocation.framework */; };
 		4FAF58291D99C0BF00CBFB1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF58281D99C0BF00CBFB1B /* AppDelegate.swift */; };
 		4FAF582E1D99C0BF00CBFB1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF582C1D99C0BF00CBFB1B /* Main.storyboard */; };
 		4FAF58301D99C0BF00CBFB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF582F1D99C0BF00CBFB1B /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F26FCE21DA59D7200D3C6E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4FAF58251D99C0BF00CBFB1B /* IKEAFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKEAFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAF58281D99C0BF00CBFB1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FAF582D1D99C0BF00CBFB1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F26FCE31DA59D7200D3C6E5 /* CoreLocation.framework in Frameworks */,
 				73E13AAF1DA2DEDF00E08111 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +54,7 @@
 		4FAF581C1D99C0BF00CBFB1B = {
 			isa = PBXGroup;
 			children = (
+				4F26FCE21DA59D7200D3C6E5 /* CoreLocation.framework */,
 				73E13AAE1DA2DEDF00E08111 /* MapKit.framework */,
 				4FAF58271D99C0BF00CBFB1B /* IKEAFinder */,
 				4FAF58261D99C0BF00CBFB1B /* Products */,
