@@ -22,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var currentLocation: CLLocation? = nil
     
     var ikeaTVC: IKEATableViewController! = nil
+    
+    
+    //core location delegate events
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentLocation = locations.last 
+    }
 
     
     //app lifecycle events
