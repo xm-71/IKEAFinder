@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         currentLocation = locations.last
         
         ikeaDataStore.sharedInstance.updateDistances(currentLocation!)
+        
+        ikeaTVC.tableView.reloadData()
     }
 
     
