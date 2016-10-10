@@ -71,9 +71,11 @@ class ikeaDataStore {
             
             print("\(thisIKEA.calculateDistance(userLocation))")
             
-        }
+            
+            
+        }//after forloop
         
-        
+        allIKEAs.sortInPlace({$0.distanceFromCurrentLocation < $1.distanceFromCurrentLocation})
         
     
     }

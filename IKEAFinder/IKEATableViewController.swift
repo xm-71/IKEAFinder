@@ -42,7 +42,7 @@ class IKEATableViewController: UITableViewController {
         
         if let distanceFromHere = IKEALocation.distanceFromCurrentLocation{
         
-            cell.lblDistance.text = "\(distanceFromHere)"
+            cell.lblDistance.text = "\(distanceFromHere) Miles from You"
         
         }
             
