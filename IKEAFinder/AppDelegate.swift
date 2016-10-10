@@ -23,9 +23,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     
     var ikeaTVC: IKEATableViewController! = nil
 
+    
+    //app lifecycle events
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //get ref to the ikea TVC
+        
+        let navController = window!.rootViewController as! UINavigationController
+        
+        ikeaTVC = navController.topViewController as! IKEATableViewController
+        
+        //set up coreloaction
+        
         return true
     }
 
