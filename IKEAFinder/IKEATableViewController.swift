@@ -40,6 +40,19 @@ class IKEATableViewController: UITableViewController {
             cell.imgSmalland.image = imgSmalland
         }
         
+        if let distanceFromHere = IKEALocation.distanceFromCurrentLocation{
+        
+            cell.lblDistance.text = "\(distanceFromHere)"
+        
+        }
+            
+        else{
+            
+        cell.lblDistance.text = ""
+            
+        }
+        
+        
         return cell
         
     }

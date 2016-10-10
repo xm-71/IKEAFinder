@@ -27,7 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     //core location delegate events
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        currentLocation = locations.last 
+        currentLocation = locations.last
+        
+        ikeaDataStore.sharedInstance.updateDistances(currentLocation!)
     }
 
     

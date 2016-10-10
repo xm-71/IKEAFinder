@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ikeaDataStore {
     
@@ -58,6 +59,23 @@ class ikeaDataStore {
 
         
         
+    }
+    
+    func updateDistances(userLocation:CLLocation){
+    
+        for thisIKEA in allIKEAs {
+        
+            
+            //let storeLocation = CLLocation(latitude: thisIKEA.latitude, longitude: thisIKEA.longitude)
+            
+            
+            print("\(thisIKEA.calculateDistance(userLocation))")
+            
+        }
+        
+        
+        
+    
     }
     
 }
